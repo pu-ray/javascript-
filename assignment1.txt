@@ -1,0 +1,8 @@
+Assignment1.text
+ Undefined-This means that a variable has been declared but has not yet been assigned a value.
+Example; var Empname= ();
+Null-This is an assigned value. It means nothing.
+Example; var=null
+
+
+

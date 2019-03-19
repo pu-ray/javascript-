@@ -1,0 +1,11 @@
+Assignment 2.text
+Declaration-creating JavaScript variables
+Example; var=”apple”
+Definition-refers to function of the owner
+Example; name=person.fullname ();
+Initialization-assigning an initial value to a variable
+Example; function init (){}
+
+
+
+
