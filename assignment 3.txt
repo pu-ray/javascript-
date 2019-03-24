@@ -1,0 +1,36 @@
+fruits=["mangoes","apples","oranges","lemon","plams","guavas","grapes","ovacados","kiwi","peas"];
+
+(10) ["mangoes", "apples", "oranges", "lemon", "plams", "guavas", "grapes", "ovacados", "kiwi", "peas"]
+
+fruits
+(10) ["mangoes", "apples", "oranges", "lemon", "plams", "guavas", "grapes", "ovacados", "kiwi", "peas"]
+
+fruits[0];
+"mangoes"
+
+fruits[1];
+"apples"
+
+fruits[2]
+"oranges"
+
+fruits[3];
+"lemon"
+
+fruits[4];
+"plams"
+
+fruits[5];
+"guavas"
+
+fruits[6];
+"grapes"
+
+fruits[7];
+"ovacados"
+
+fruits[8];
+"kiwi"
+
+fruits[9];
+"peas"

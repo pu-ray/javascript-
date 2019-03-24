@@ -1,0 +1,65 @@
+var a ="42";
+var b =Number(a); // Number(a);
+undefined
+a
+"42"
+b
+42
+var c =a*10 //a
+undefined
+console.log(a);
+VM1390:1 42
+undefined
+console.log(b);
+VM1420:1 42
+undefined
+console.log(c);
+VM1450:1 420
+undefined
+var a = /*arbitary value*/ 10;
+undefined
+console.log(a); // 10
+VM1521:1 10
+undefined
+const TAX_RATE = 0.03;
+undefined
+var amount = 102.98;
+undefined
+amount = amount +(amount*TAX_RATE);
+106.0694
+console.log(amount);
+VM1701:1 106.0694
+undefined
+var amount =101;
+if(amount >100){
+let amount = 200;
+amount = amount*2;
+console.log(amount);
+}
+console.log(amount);
+VM1893:5 400
+VM1893:7 101
+undefined
+var amount =101;
+if(amount > 100){
+var amount = 200;
+amount = amount*2;
+console.log(amount);
+}
+console.log(amount);
+VM2110:5 400
+VM2110:7 400
+undefined
+for(var i=1; i<=9;i++){
+console.log(i);
+}
+VM2195:2 1
+VM2195:2 2
+VM2195:2 3
+VM2195:2 4
+VM2195:2 5
+VM2195:2 6
+VM2195:2 7
+VM2195:2 8
+VM2195:2 9
+undefined

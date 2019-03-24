@@ -1,0 +1,51 @@
+Assignment1.text
+ Undefined-This means that a variable has been declared but has not yet been assigned a value.
+Example; var Empname= ();
+Null-This is an assigned value. It means nothing.
+Example; var=null
+
+Assignment 2.text
+Declaration-creating JavaScript variables
+Example; var=”apple”
+Definition-refers to function of the owner
+Example; name=person.fullname ();
+Initialization-assigning an initial value to a variable
+Example; function init (){}
+
+Assigment 3.text(trial 1).
+fruits=["mangoes","apples","oranges","lemon","plams","guavas","grapes","ovacados","kiwi","peas"];
+
+(10) ["mangoes", "apples", "oranges", "lemon", "plams", "guavas", "grapes", "ovacados", "kiwi", "peas"]
+
+fruits
+(10) ["mangoes", "apples", "oranges", "lemon", "plams", "guavas", "grapes", "ovacados", "kiwi", "peas"]
+
+fruits[0];
+"mangoes"
+
+fruits[1];
+"apples"
+
+fruits[2]
+"oranges"
+
+fruits[3];
+"lemon"
+
+fruits[4];
+"plams"
+
+fruits[5];
+"guavas"
+
+fruits[6];
+"grapes"
+
+fruits[7];
+"ovacados"
+
+fruits[8];
+"kiwi"
+
+fruits[9];
+"peas"
