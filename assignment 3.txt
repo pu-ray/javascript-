@@ -34,3 +34,17 @@ fruits[8];
 
 fruits[9];
 "peas"
+fruits=["mangoes","apples","oranges","lemon","plams","guavas","grapes","ovacados","kiwi","peas"];
+
+
+
+(10) ["mangoes", "apples", "oranges", "lemon", "plams", "guavas", "grapes", "ovacados", "kiwi", "peas"]
+
+var fruits_index = prompt ("select fruits from 0-9");
+
+function getFruits(fruits,fruits_index) { return (fruits[fruits_index]);}
+
+undefined
+
+getFruits(fruits,fruits_index)
+"plams"
