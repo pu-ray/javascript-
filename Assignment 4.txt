@@ -1,0 +1,61 @@
+fruitslist={"apple":30,"oranges":20,"kiwi":45,"grapes":40};
+
+
+{apple: 30, oranges: 20, kiwi: 45, grapes: 40}
+
+
+var quantity=2;
+
+
+undefined
+
+
+var price = fruitslist["oranges"]* quantity
+
+
+undefined
+
+ 
+price 
+40
+
+
+function calculatefruitscost(mangoes,bananas)
+
+{
+fruitslist={"apple":30,"oranges":20,"kiwi":45,"grapes":40};
+
+
+console.log(quantity +"" +apples +"for kES"+ price);}
+
+undefined
+
+
+function calculatefruitscost(mangoes,bananas)
+
+{
+fruitslist={"apple":30,"oranges":20,"kiwi":45,"grapes":40};
+
+
+console.log(quantity +"" +mangoes +"for kES"+ price);}
+
+
+
+undefined
+
+
+console.log("oranges",2);
+
+
+ oranges 2
+
+
+undefined
+
+
+calculatefruitscost("orange",2);
+
+
+ 2 orange for kES 40
+
+undefined
