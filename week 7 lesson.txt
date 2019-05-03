@@ -1,0 +1,91 @@
+let user1 = {
+  name: "emma mbugua",
+}
+
+
+let user2 = {
+  name: "peter mbugua",
+}
+let user3 = {
+  name: "purity mbugua"
+}
+  
+ function sayHi(){
+  console.log("Hello....,I am "+ this.name);
+}
+
+
+user1.sayHi=sayHi;
+user2.sayHi= sayHi;
+user3.sayHi= sayHi;
+
+user1.sayHi();
+user2.sayHi();
+user3.sayHi();
+
+"Hello....,I am emma mbugua"
+"Hello....,I am peter mbugua"
+"Hello....,I am purity mbugua"
+
+#classes
+
+class Lovelace{
+  constructor(){
+    this.name = null;
+    this.age = null;
+  }
+  setName(name){
+    this.name = name;
+    
+  }
+  getName(){
+    return this.name;
+  }
+}
+let student1 = new Lovelace();
+let student2 = new Lovelace();
+
+student1.setName("purity");
+alert(student1.getName());
+
+class Lovelace{
+  constructor(){
+    this.name = null;
+    this.age = null;
+  }
+  setage(age){
+//     this.name = name;
+    this.age = age;
+    
+  }
+  getage(){
+//     return this.name;
+    return this.age;
+  }
+}
+let student1 = new Lovelace();
+let student2 = new Lovelace();
+
+student1.setage(45);
+alert(student1.getage());
+
+student2.setage(25);
+alert(student2.getage());
+
+let obj1 = {a: 10}
+let obj2 = Object.create(obj1);
+obj2.b = 20;
+console.log(obj1.a);
+console.log(obj2.a);
+console.log(obj2.b);
+obj1.a=30;
+console.log(obj2.a);
+console.log(obj2.b);
+10
+10
+20
+30
+20
+
+student2.setName("Emma");
+alert(student2.getName());
