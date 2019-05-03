@@ -1,0 +1,75 @@
+#DESTRUCTURING
+
+var fruits = ["melon","banana","avacado"];
+var [fruit1 , fruit2, fruit3] = fruits;
+console.log(fruit2);
+
+let name = ["purity", "mbugua"]
+let [firstname,lastname] = name;
+
+console.log(firstname);
+
+
+let name ="Purity mbugua"; 
+let [firstname, lastname]= name.split("");
+
+alert (`Hi, ${lastname}`)
+
+****
+
+let student = {
+  name:"pu-ray",
+  age:18,
+  gender:"female"
+}
+let{age} = student;
+console.log(age);
+  
+}
+
+let {name:firstname,age,proffesion = "unknown"}=student
+
+let student ={
+  name:"pu ray",
+  gender :"female",
+  proffesion:"fronted developer"
+}
+for (let key in student){
+  if (student.hasOwnProperty(key)){
+    console.log(student[key]);
+  }
+}
+
+
+let student ={
+  name:"pu ray",
+  gender :"female",
+  proffesion:"fronted developer"
+}
+for (let [key,value] of object.entries(student)){  
+  
+    console.log(student[key]);
+}
+  ###using of the rest
+
+let student ={
+  name:"pu ray",
+  gender :"female",
+  proffesion:"fronted developer"
+}
+let{name,...rest}=student;
+console.log(name,rest);
+let name = () => "purity";
+
+console.log(name())
+
+###arrow  key  *** you can use to calculate,,
+omit one paameter one function ,,example n*2;
+let multiply = (a,b) => a*b;
+console.log(multiply(3,5))
+15
+
+
+
+
+
