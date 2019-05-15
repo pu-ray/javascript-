@@ -1,0 +1,264 @@
+Javascript summary
+1).Hello World.
+javascript is a programming language that can be used in any browser 
+
+it runs on the side of the web ,,where it is used to design /program how the web pages behave on  the occurence of an event
+
+2).variables and types
+
+var-this is used to declare a variable hence intializing it  to a value
+
+example;var a =2(2 being the value)
+there are different types of variables
+
+a)Boolean variables can only be equal to either true or false
+
+b)var array we use square brackets
+c)var objects we use calibraces
+
+undefined means declaring a variable without defining its value
+
+example;
+var a;
+null
+null -its used when a variable should be marked as empty
+example
+
+var a = null;
+example of an object;
+
+var user ={firstName:"purity",lastName:"mbugua"};
+
+example of an array;
+
+var fruit = ["mangoes","oranges","bananas","kiwi"];
+
+
+3).Arrays-
+defining arrays we use brackets notation or the array object notation
+
+example;
+var fruit = ["mangoes","kiwi"];
+var fruit = new myFruit("mangoes",kiwi");
+
+Addressing:
+we can use the brackets operators [] to address a specific cell
+
+example;
+
+console.log(myFruit[1]);
+
+Array Elements:
+
+example;
+var myList = ["mangoes",10,{}];
+Manipulating Arrays
+push-we use it to insert a variable
+
+pop - we use it to remove a variable
+
+example;
+
+var fruit = [];
+
+fruit.push("mangoes");
+
+fruit.push("kiwi");
+
+fruit.push("Banana");
+
+console.log(fruit);
+
+VM71:5 (3) ["mangoes", "kiwi", "Banana"]
+shifting and unshifting are used from the beginning of an array
+
+splicing this is used to remove a certain part of an array to create a new array
+
+
+4).0perators
+The addition operator is used for both addition and concatenation of strings
+
+examples;
+var a = 8;
+
+var b = 7;
+
+var c =a+b;
+
+
+c
+
+15
+var name = "purity"
+
+console.log("Hello"+"" +name);
+
+VM151:2 Hellopurity
+we also have different mathematical operators
+
+subtract(-)
+
+divide(/,//)
+
+multiply(*)
+
+
+we can also use advanced mathematical operators such as;
+modulus(%)
+
+
+5).Coditions
+The if statement-
+it is used to check  if an expression is true or false
+
+var time = new Date().getHours();
+
+if (time < 20) {
+
+ greeting = "Good day";
+
+}else {
+
+ greeting = "Good evening";
+
+}
+
+"Good day"
+
+
+
+The switch statement -
+used to select between more then two different options and run the same code for more than one option
+
+
+example;
+switch (new Date().getDay()) {
+
+ case 0:
+
+day = "Sunday";
+
+   break;
+
+ case 1:
+ 
+  day = "Monday";
+
+   break;
+
+ case 2:
+
+    day = "Tuesday";
+
+   break;
+ 
+case 3:
+ 
+  day = "Wednesday";
+
+   break;
+
+ case 4:
+ 
+  day = "Thursday";
+
+   break;
+
+ case 5:
+
+   day = "Friday";
+
+   break;
+
+ case 6:
+
+   day = "Saturday";
+}
+
+"Sunday"
+
+
+6).Loops-
+The for loop 
+it is mainly used for rating over arrays and objects
+
+example;
+var m;
+
+for (m = 0; m < 3; m = m + 1)
+
+{
+
+   console.log(m);
+
+}
+VM261:4 0
+
+VM261:4 1
+
+VM261:4 2
+
+
+
+
+The while statement
+used to check if  an expression evaluates  or runs as long as it is true
+
+example;
+
+var i = 5;
+
+while (i > 0)
+
+{
+
+   console.log(i + " JavaScript books on the table");
+
+   i -= 1;
+}
+
+5 JavaScript books on the table
+
+4 JavaScript books on the table
+
+3 JavaScript books on the table
+
+2 JavaScript books on the table
+
+1 JavaScript books on the table
+
+
+
+7).break and continuous statements
+ 
+break statement allows to stop the execution of the loop
+
+the continuous statement skips the rest of the loop and jumps back to the beginning of the loop
+
+
+for (var n = 0; n < 10; n++)
+
+{
+
+ 
+  if (n % 2 == 0)
+
+   {
+ 
+       continue;
+
+   }
+
+ 
+  console.log(n + " is an odd number.");
+
+}
+1 is an odd number.
+
+3is an odd number.
+
+5 is an odd number.
+
+7 is an odd number.
+
+9 is an odd number.
