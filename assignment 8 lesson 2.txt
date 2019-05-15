@@ -1,0 +1,53 @@
+####call backs and promises;
+
+function pleaseCallMe(){
+  console.log("No credit,purity")
+}
+
+setTimeout(pleaseCallMe,5000)
+
+function pleaseCallMe(){
+  console.log("No credit,purity")
+}
+
+setInterval(pleaseCallMe,5000)
+
+function fullName(firstName,LastName){
+  return '${firstName} ${lastName}'
+ }
+
+ function ask(){ // passing our calback as a param
+   firstName =prompt("What is your first name?")
+   lastName=prompt("What is your last name?")
+   let name = fullName(firstName,lastName); // callback function
+   alert("Your name is " +name);
+  
+ }
+ ask(fullName);
+function gift(){
+   return "chanel pour femme"
+ }
+function receiveGift(gift){
+  alert("Taraaah.. your gift is " + gift())
+ 
+}
+
+ receiveGift(gift) 
+function gift(){
+   return "chanel pour femme"
+ }
+function receiveGift(gift){
+  setTimeout(() => alert("Taraaah.. your gift is " + gift()),3000)
+ 
+}
+
+ receiveGift(gift) 
+
+ console.log("plant kunde")
+setTimeout(() => console.log("water kunde"),3000)
+console.log("fertilizer kunde")
+
+
+#####splicing
+var arr = [1,2,3,4,5]
+console.log(arr.splice(2,1))
