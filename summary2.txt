@@ -1,0 +1,82 @@
+TOPIC 3;
+SUMMARIZING UNSHIFT(),SHIFT(),PUSH(),POP(),SPLICE(),SLICE()
+Example 1;
+a)Slice()-returns a new array containing the extracted elements.
+
+var fruits = new Array ( "apple", "pear", "orange", "banana" );
+console.log(fruits.slice ( 1, 3 ));
+["pear", "orange"]
+
+var fruits = new Array ( "apple", "pear", "orange", "banana" );
+console.log(fruits.slice ( 0, -2 ));
+["apple", "pear"]
+
+var fruits = new Array ( "apple", "pear", "orange", "banana" );
+console.log(fruits.slice (  2 ));
+["orange", "banana"]
+
+b)Unshift()-adds elements to the start of an array and returns the new length of an array.
+
+var fruits = [ "orange", "banana" ];
+var newLength = fruits.unshift ( "apple", "pear" );
+console.log(fruits);
+["apple", "pear", "orange", "banana"]
+
+console.log(newLength);
+4
+
+c)shift()-removes and returns one element from the start of an array.
+
+var fruits = [ "apple", "pear", "orange", "banana" ];
+var fruit = fruits.shift ( );
+console.log(fruits);
+["pear", "orange", "banana"]
+
+console.log(fruit);
+"apple"
+
+d)push()-Adds elements to the end of an array and returns the new length of an array.
+
+var fruits = [ "orange", "banana" ];
+var newLength = fruits.push ( "apple", "pear" );
+console.log( fruits );
+["orange", "banana", "apple", "pear"]
+
+console.log(newLength);
+4
+
+e).pop()-Removes and returns one element from the end of an array.
+var fruits = [ "apple", "pear", "orange", "banana" ];
+var fruit = fruits.pop ( );
+console.log(fruits);
+["apple", "pear", "orange"]
+
+console.log(fruit);
+"banana"
+
+f).splice()-Adds and removes one or more elements from any point in an array.
+examples:
+(i).Removing two elements from the middle of an array:
+var fruits = [ "apple", "pear", "orange", "banana" ];
+var removedElements = fruits.splice ( 1, 2 );
+console.log(fruits);
+["apple", "banana"]
+
+console.log(removedElements);
+["pear", "orange"]
+
+(ii).Adding two elements to the middle of an array:
+
+var fruits = [ "apple", "pear", "orange", "banana" ];
+var removedElements = fruits.splice ( 2, 0, "cherry" );
+console.log(fruits);
+["apple", "pear", "cherry", "orange", "banana"]
+
+(iii).Replacing two elements with a single, new element:
+var fruits = [ "apple", "pear", "orange", "banana" ];
+var removedElements = fruits.splice ( 1, 2, "cherry" );
+console.log(fruits);
+["apple", "cherry", "banana"]
+
+console.log(removedElements);
+["pear", "orange"]
