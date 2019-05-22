@@ -1,0 +1,106 @@
+class MumMboga {
+  
+  constructor() {
+    this.products = [];
+    this.carts = [];
+    this.orders = [];
+    this.customers  = [];
+  }
+addProduct(productId,name,price,quantity){
+  this.products.push(productId);
+  this.products.push(name);
+  this.products.push(price);
+  this.products.push(quantity);
+}
+  removeProduct(productId){
+   if(this.products[0] == productId){
+    this.products=[];
+  }
+  }
+  updateProduct(productId,name,price,quantity){
+    this.products.push(productId);
+    this.products.push(name);
+    this.products.push(price);
+    this.products.push(quantity);
+  }
+  getProduct(productId){
+    if (this.products[0] == productId){
+      console.log(this.products);
+      }
+    else{
+      console.log("Hello,we are sorry your record does not exist")
+    }
+    }
+getProductCatalog(){
+      var vegetablelist = [];
+	this.products[0] = this.products;
+      	vegetablelist={"5":600,"10":1500,"3":400};
+      	console.log(vegetablelist);
+}
+addToCart(cartId,productId,orderQuantity,customerId){
+    this.carts.push(cartId);
+    this.carts.push(productId);
+    this.carts.push(orderQuantity);
+    this.carts.push(customerId);
+  }
+    removeFromCart(productId){
+      if(this.carts[1] == productId){
+        this.carts=[];
+      }
+    }
+  createOrder(orderId,cartId){
+    this.orders.push(orderId);
+    this.orders.push(cartId);
+  }
+  cancelOrder(orderId){
+   if(this.orders[0] == orderId){
+    this.orders=[];
+  }
+  }
+    
+ 
+  addCustomer(customerId,name,email,address){
+    this.customers.push(customerId);
+    this.customers.push(name);
+    this.customers.push(email);
+    this.customers.push(address); 
+  }
+  removeCustomer(customerId){
+   if(this.customers[0] == customerId){
+        this.customers=[];
+      } 
+  }
+  updateCustomer(customerId,name,email,address){
+    
+    this.customers.push(customerId);
+    this.customers.push(name);
+    this.customers.push(email);
+    this.customers.push(address); 
+  }
+  getCustomer(customerId){
+       if (this.customers[0] == customerId){
+         console.log(this.customers);
+      }
+      
+  }
+   }
+
+   
+}
+let customer1 = new MumMboga();
+customer1.addProduct("234","mangoes","200","2");
+customer1.getProduct("234");
+["234", "mangoes", "200", "2"]
+
+customer1.removeProduct("234");
+customer1.getProduct("234");
+"Hello,we are sorry your record does not exist"
+
+customer1.updateProduct("234","mangoes","200","2");
+customer1.getProduct("234");
+["234", "mangoes", "200", "2"]
+
+customer1.getProductCatalog();
+10: 1500,
+  3: 400,
+  5: 600
