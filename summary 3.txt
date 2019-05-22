@@ -1,0 +1,86 @@
+OPerators:
+
+a).Addition operator(+)-used for both addition and concatenation of strings.
+
+Examples:
+
+(i).addition 
+var a = 8;
+
+var b = 7;
+
+var c =a+b;
+console.log(c);
+15
+
+(ii).concatenation of strings
+
+var name = "purity"
+console.log("Hello"+" " + "" +name);
+"Hello purity"
+
+var a = "You have done so great to me ";
+a += "and i truly appreciate";
+console.log(a);
+"You have done so great to me and i truly appreciate"
+
+(b).Multiplication
+
+var a = 25;
+
+var b = 60;
+
+var c =a*b;
+console.log(c);
+1500
+
+(c).Subtraction
+
+var a = 2007;
+
+var b = 10;
+
+var c =a-b;
+
+console.log(c);
+917
+
+(d).Dividing
+var a = 2007;
+
+var b = 10;
+
+var c =a/b;
+
+console.log(c);
+200.7
+
+(e).Modulus
+var a = 2007;
+
+var b = 10;
+
+var c =a % b;
+
+console.log(c);
+7
+
+(f).Incrementing
+var a= 125;
+a++;
+var z = a;
+console.log(a);
+126
+
+(g).Decrementing
+var a= 125;
+a--;
+var z = a;
+console.log(a);
+124
+
+(h).Exponentiation
+var a = 125;
+var z = a ** 2;
+console.log(z);
+15625
