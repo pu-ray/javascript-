@@ -1,0 +1,81 @@
+Coditions:
+Examples;
+function getGrade(marks){
+
+    if (marks>=80 & marks<=100) {
+
+        return ("A");
+
+       }
+    
+    else if(marks>=70 & marks<=79) {
+
+        return("B");
+
+     }
+
+    else if(marks>=60 & marks<=69) {
+
+        return("C");
+
+      }
+    
+    else if(marks>=50 & marks<=59) {
+
+        return("D");
+
+      }
+    
+    else if(marks>=0 & marks<=40)  {
+
+        return("E");
+
+     }
+    
+    else {
+    
+        return("F");
+
+    }
+
+}  
+console.log(getGrade(84));
+"A"
+console.log(getGrade(23));
+"E"
+console.log(getGrade(45));
+"F"
+
+Example 2;
+
+var time = 2235;
+if (time >=0 && time <=1159) {
+
+ greeting = "Good morning";
+
+}else if (time>=1200 && time <=1459) {
+
+ greeting = "Good afternoon";
+
+}
+else if (time>=1500 && time <=2000){
+  greeting = "Good Evening"
+  
+}
+else{
+  greeting=("How has your day been?");
+}
+
+console.log(greeting);
+"How has your day been?"
+
+Example 3;
+
+var a = 43;
+if (a % 2 == 0){
+  console.log("even number");
+}
+  else{
+    console.log("odd number") ;
+  }
+"odd number"
