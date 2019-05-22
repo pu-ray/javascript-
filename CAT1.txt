@@ -1,0 +1,134 @@
+class Mkulima {
+
+  
+
+  constructor() {
+
+    this.farms = [];
+
+    this.vendors = [];
+
+    this.products = [];
+
+    this.orders = [];
+
+  }
+
+addfarm(farmId,name,farmer,phone,address){
+  this.farms.push(farmId);
+  this.farms.push(name);
+  this.farms.push(farmer);
+  this.farms.push(phone);
+  this.farms.push(address);
+}
+  removeFarm(farm_id){
+        if (this.farms[0] == farm_id){
+          this.farms=[];
+        }
+  }
+    
+ updatefarm(farmId,name,farmer,phone,address){
+  this.farms.push(farmId);
+  this.farms.push(name);
+  this.farms.push(farmer);
+  this.farms.push(phone);
+  this.farms.push(address);
+}
+  
+    getfarm(farm_id){
+        if (this.farms[0] == farm_id){
+          console.log (this.farms);
+        }
+      else{
+        console.log("the record does not exist");
+      }
+  }
+}
+
+addvendor(vendorId,name,phone){
+  this.vendors.push(vendorId);
+  this.vendors.push(name);
+  
+  this.vendors.push(phone);
+  
+}
+  removevendor(vendorId){
+        if (this.vendors[0] == vendorId){
+          this.vendors=[];
+        }
+  }
+    
+ updatevendor(vendorId,name,phone){
+  this.vendors.push(vendorId);
+  this.vendors.push(name);
+  
+   
+  this.vendors.push(phone);
+  
+   
+}
+  
+    getvendor(vendorId){
+        if (this.vendors[0] == vendorId){
+          console.log (this.vendors);
+        }
+      else{
+        console.log("the record does not exist");
+      }
+  }
+}
+
+addproduct(productId,name,price){
+  this.products.push(productId);
+  this.products.push(name);
+  
+  this.products.push(price);
+  
+}
+  removeproduct(productId){
+        if (this.products[0] == productId){
+          this.products=[];
+        }
+  }
+    
+ updateproduct(productId,name,price){
+  this.products.push(productId);
+  this.products.push(name);
+  
+   
+  this.products.push(price);
+  
+   
+}
+  
+    getproduct(productId){
+        if (this.products[0] == productId){
+          console.log (this.products);
+        }
+      else{
+        console.log("the record does not exist");
+      }
+  }
+}      
+let farm1 = new Mkulima();
+farm1.addfarm("278","Jee","Juma","0723736296","279");
+// farm1.getfarm("278");
+farm1.removeFarm("278");
+farm1.updatefarm("278","Jee","Juma","0723736296","279");
+farm1.getfarm("278");
+
+let vendor1 = new Mkulima();
+vendor1.addvendor("404","Mercy","0790773408");
+vendor1.getvendor("404");
+ vendor1.removevendor("404");
+vendor1.updatevendor("404","Mercy","0790773408");
+vendor1.getvendor("404");
+
+let product1 = new Mkulima();
+product1.addproduct("302","Peas","1200");
+product1.getproduct("302");
+product1.removeproduct("302");
+product1.updateproduct("302","Peas","1200");
+product1.getproduct("302");
+product1.getproduct("302");
+    
