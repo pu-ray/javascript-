@@ -1,0 +1,35 @@
+class Person{
+  constructor(firstName,lastName){
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+  getfullName () {
+    return  this.firstName + " " + this.lastName;
+}
+  
+}
+  var person = new Person("purity","mbugua")
+  console.log(person.getfullName());
+"purity mbugua"
+
+
+class Person{
+   constructor(){
+    this.firstName = null;
+     this.lastName =null ; 
+   }
+   setfullName(firstName,lastName){
+     this.firstName = firstName;
+     this.lastName = lastName;
+     return this.firstName + " " +this.lastName;
+   }
+   getFullName (){
+      return  this.firstName + " " + this.lastName;
+     }}
+var person  = new Person()
+ person.setfullName("purity","mbugua");
+console.log(person.getFullName());
+
+"purity mbugua"
+
+  
