@@ -1,0 +1,52 @@
+class Mkulima {
+  constructor() {
+    this.farms = [];
+
+    this.vendors = [];
+
+    this.products = [];
+
+    this.orders = [];
+  }
+ addFarm( farmId, name, farmer, phone, address){
+    let farm ={Id:farmId,name:name,farmer:farmer,address:address}
+      this.farms.push(farm)
+     // return this.farms
+ }
+  getFarm(farmId){
+    for (var i =[0]; i<this.farms.length;i++){
+      let name =this.farms[i]
+    } 
+  }
+  
+ removeFarm(farmId){
+   let farm =this.getFarm(farmId)
+    let index = this.farms.indexOf(farm)
+    this.farms.splice(index,1)
+ }
+
+ updateFarm(farmId, name, farmer, phone, address){
+  var newArray = this.farms;
+ var objIndex = newArray.findIndex(obj=>
+  obj.Id == farmId);
+  newArray[objIndex].Id = farmId
+  newArray[objIndex].name = name
+  newArray[objIndex].phone = phone
+  newArray[objIndex].address = address
+  return newArray 
+}
+}
+var mkulima = new Mkulima();
+mkulima.addFarm(2345,'kijamani','mkulisha',0790775346,'mkulisha@gmail.com')
+mkulima.addFarm(8970,'kija','mkuli',0790775346,'mkuli@gmail.com')
+
+console.log(mkulima.farms)
+
+mkulima.getFarm(2345)
+console.log(mkulima.farms)
+
+mkulima.removeFarm(2345)
+console.log(mkulima.farms)
+
+mkulima.updateFarm(2345,'kijama','mkulisha',0790775346,'mkulisha89@gmail.com')
+console.log(mkulima.farms)
