@@ -1,0 +1,19 @@
+var body = document.body;
+ body.style.backgroundColor = "silver"
+ 
+ var h1 = document.getElementById("title")
+ h1.style.color = "green"
+ 
+ var h3 = document.getElementById("demo");
+ h3.style.textTransform = "upperCase"
+ 
+ var h3 = document.getElementById("panel");
+ h3.style.textTransform = "upperCase"
+ 
+ var fruit = document.createElement("li");
+ fruit.innerHTML = "kiwi"
+ fruList.appendChild(fruit)
+ 
+ var vegetables = document.createElement("li");
+ vegetables.innerHTML = "sukumawiki"
+ vegList.appendChild(vegetables)
