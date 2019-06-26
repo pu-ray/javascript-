@@ -1,0 +1,59 @@
+var x = document.getElementById("title");
+ x.style.color = "green";
+
+function changeColor(){
+ x.style.color = x.style.color == "green"?"silver":"green";
+}
+
+window.setInterval(changeColor,1000);
+
+var coll = document.getElementsByClassName("panel");
+var j;
+
+for (j = 0; j < coll.length; j++) {
+  coll[j].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+var coll = document.getElementsByClassName("cont");
+var k;
+
+for (k = 0; k < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+ function addFruit(){
+   var li = document.createElement("li")
+   var input =document.getElementById("frut");
+   li.innerHTML = input.value;
+   document.getElementById("fruList").appendChild(li);
+ }
+
+var li = document.getElementById("veg");
+ input.addEventListener("keyup", function(event) {
+   if (event.keyCode === 13) {
+    event.preventDefault();
+     var li = document.createElement("li")
+    var input =document.getElementById("veg");  
+     li.innerHTML = input.value;
+     var inputvalue = input.value
+      var li = document.createElement("li")
+      var textnode =document.createTextNode(inputValue);
+     document.getElementById("vegList").appendChild(li);
+   }
+   }
+ );
